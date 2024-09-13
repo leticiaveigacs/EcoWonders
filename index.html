@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Meu Site</title>
+
+  <!-- <h1>Boostrap css link e Font Awesome</h1> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+
+  <br>
+    <!-- <h1>Link Bootstrap javascript</h1> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ 
+    <nav class="navbar col-12 position-fixed navbar-expand-lg navbar-dark bg-dark" style="z-index:999;">
+        <div class="container-fluid col-11 m-auto">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#produtos">Protudos</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#contactos">Contatos</a>
+              </li> 
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul> -->
+             <!--  </li> -->
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+           <!--  </ul> -->
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+
+      <br><br><br>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <h2 class="text-center">Produtos</h2>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="bird.jpg" class="d-block w-100" alt="bird">
+          </div>
+          <div class="carousel-item">
+            <img src="lizard.png" class="d-block w-100" alt="lizard">
+          </div>
+          <div class="carousel-item">
+            <img src="spider.jpg" class="d-block w-100" alt="spider">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div id="produtos" class="row row-cols-1 row-cols-md-3 g-4 col-11 m-auto">
+        
+        <div class="col">
+            <!-- <div class="col">
+                <h2 class="text-center">Produtos</h2>
+            </div> -->
+          <div class="card">
+            <img src="bird.jpg" class="card-img-top" alt="bird">
+            <div class="card-body">
+              <h5 class="card-title">Pássaro em Voo Livre</h5>
+              <p class="card-text">
+                Um belo pássaro de penas coloridas sobrevoa uma vasta paisagem verde, com as asas estendidas em pleno voo.
+
+              </p>
+            
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                   Saiba Mais!
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Pássaro</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="bird.jpg" class="card-img-top" alt="bird">
+                            <p>
+                                O pássaro representa a liberdade e a leveza da natureza. Ao sobrevoar florestas e campos, ele mantém o equilíbrio no ecossistema, ajudando na polinização e dispersão de sementes. Suas asas abertas refletem a conexão entre o céu e a terra, lembrando-nos de como a vida selvagem está sempre em harmonia com o ambiente ao seu redor.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="lizard.png" class="card-img-top" alt="lizard">
+            <div class="card-body">
+              <h5 class="card-title">Lagarto Sobre a Rocha</h5>
+              <p class="card-text">
+                Um lagarto de escamas brilhantes repousa sobre uma rocha quente, sua pele refletindo tons de verde e marrom que se misturam perfeitamente com o ambiente ao redor.
+
+              </p>
+
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba Mais!
+             </button>
+             
+             <!-- Modal -->
+             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div class="modal-dialog">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                     <h1 class="modal-title fs-5" id="exampleModalLabel">Lagarto</h1>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                         <img src="lizard.png" class="card-img-top" alt="lizard">
+                         <p>
+                            Com um olhar atento, o lagarto observa o ambiente em busca de pequenos insetos para se alimentar. Este réptil é um mestre da camuflagem, adaptando-se ao terreno árido e rochoso. Sua presença discreta desempenha um papel importante no controle de pragas, contribuindo para o equilíbrio dos ecossistemas onde vive.
+                         </p>
+                     </div>
+                     <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-primary">Save changes</button>
+                     </div>
+                 </div>
+                 </div>
+             </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="spider.jpg" class="card-img-top" alt="spider">
+            <div class="card-body">
+              <h5 class="card-title"> Aranha em Sua Teia</h5>
+              <p class="card-text">
+                Uma aranha delicada tece sua teia entre dois galhos, com gotas de orvalho brilhando como pequenas pérolas nas linhas finas de seda.
+
+              </p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba Mais!
+             </button>
+             
+             <!-- Modal -->
+             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div class="modal-dialog">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                     <h1 class="modal-title fs-5" id="exampleModalLabel">Aranha</h1>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                         <img src="spider.jpg" class="card-img-top" alt="spider">
+                         <p>
+                            A aranha é uma engenheira nata, criando estruturas complexas e fortes que são essenciais para sua sobrevivência. Cada fio de sua teia é um testemunho da incrível habilidade natural de adaptação. Embora muitas vezes temidas, as aranhas desempenham um papel crucial no controle populacional de insetos, garantindo que os ecossistemas permaneçam saudáveis e equilibrados.
+                         </p>
+                     </div>
+                     <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-primary">Save changes</button>
+                     </div>
+                 </div>
+                 </div>
+             </div>
+
+            </div>
+          </div>
+        </div>
+     
+      </div>
+
+      <hr>
+
+      <div class="col-11 m-auto">
+        <h2 class="text-center">A Beleza e Importância da Vida Selvagem</h2>
+        <p class="text-center">
+            A vida selvagem é um dos maiores tesouros que o nosso planeta tem a oferecer. Em cada canto do mundo, podemos encontrar espécies incríveis, cada uma desempenhando um papel fundamental no ecossistema. Da majestosa águia planando pelos céus ao pequeno e ágil lagarto se escondendo nas rochas, todas as formas de vida contribuem para o equilíbrio e a harmonia da natureza.
+
+            Os animais selvagens não são apenas fascinantes por sua beleza e comportamento, mas também essenciais para a saúde do nosso planeta. Eles ajudam na polinização de plantas, no controle de pragas e na manutenção de habitats saudáveis. Sem eles, muitos ecossistemas colapsariam, levando a consequências desastrosas para a vida na Terra.
+
+            É importante lembrar que muitas dessas espécies estão ameaçadas pela ação humana. A destruição de habitats, a caça ilegal e as mudanças climáticas colocam em risco inúmeras formas de vida. Proteger a vida selvagem é uma responsabilidade que todos devemos assumir, pois ela está intrinsecamente ligada ao nosso próprio bem-estar e ao futuro do planeta.
+
+            Apreciar e respeitar a vida selvagem é também uma forma de nos reconectarmos com a natureza. Observar o comportamento dos animais em seu ambiente natural nos ensina sobre adaptação, resiliência e cooperação. A convivência com a vida selvagem pode nos inspirar a viver de maneira mais harmoniosa com o mundo ao nosso redor.
+                    
+        </p>
+
+    </div>
+
+    <hr>
+
+    <div id="contactos" class="col-11 m-auto">
+        <h2 class="text-center">Contacto</h2>
+        <div class="m-auto" style="width: 150px;">
+            <a href="https://web.whatsapp.com/">
+                  <i class="fa-brands fa-whatsapp" style="font-size: 150px; color: green;"></i>
+            </a>
+        </div>
+    </div>
+
+    <footer style="background-color: #333;" class="p-5">
+        <div>
+            <a href="https://github.com/leticiaveigacs"> &copy 2024 | Leticia Veiga </a>
+        </div>
+    </footer>
+
+</body>
+</html>
